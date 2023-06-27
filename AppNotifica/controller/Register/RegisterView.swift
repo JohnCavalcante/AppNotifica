@@ -19,19 +19,20 @@ class RegisterView: UIView {
             
         }
     
+    //MARK: - Initialize
+    var onLoginTap: (()->Void)?
+     
     //cria a função com as propriadades da label no login
     var imageLabel = LabelDefault(text: "Entre com seu email e sua senha para se registrar", font: UIFont.systemFont(ofSize: 27, weight: .regular))
     
     //cria a função com as propriadades da text no login
-    var emailTextField = TextFieldDefault (placeholder: "   E-mail")
+    var emailTextField = TextFieldDefault (placeholder: "E-mail")
     
     //cria a função com as propriadades da text no login
-    var senhaTextField = TextFieldDefault (placeholder: "   Senha")
+    var senhaTextField = TextFieldDefault (placeholder: "Senha")
     
     //cria a função com as propriadades da text no login
-    var confirmaSenhaTextField = TextFieldDefault (placeholder: "   Confirme sua senha")
-    
-    
+    var confirmaSenhaTextField = TextFieldDefault (placeholder: "Confirme sua senha")
     
     //cria a função com as propriadades do botão registrar
     var buttonRegistrar = ButtonDefault(botao: "REGISTRAR")
@@ -51,6 +52,8 @@ class RegisterView: UIView {
         self.addSubview(buttonRegistrar)
         self.addSubview(buttonLogar)
         
+        buttonLogar.addTarget(self, action: #selector(loginTap), for: .touchUpInside)
+        
         
         NSLayoutConstraint.activate([
         
@@ -63,7 +66,7 @@ class RegisterView: UIView {
             
             emailTextField.widthAnchor.constraint(equalToConstant: 374),
             emailTextField.heightAnchor.constraint(equalToConstant: 60),
-            emailTextField.topAnchor.constraint(equalTo: imageLabel.bottomAnchor, constant: 40),
+            emailTextField.topAnchor.constraint(equalTo: imageLabel.bottomAnchor, constant: 70),
             emailTextField.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
             emailTextField.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16),
             
@@ -83,7 +86,7 @@ class RegisterView: UIView {
 
             buttonRegistrar.widthAnchor.constraint(equalToConstant: 374),
             buttonRegistrar.heightAnchor.constraint(equalToConstant: 60),
-            buttonRegistrar.topAnchor.constraint(equalTo: confirmaSenhaTextField.bottomAnchor, constant: 40),
+            buttonRegistrar.topAnchor.constraint(equalTo: confirmaSenhaTextField.bottomAnchor, constant: 25),
             buttonRegistrar.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
             buttonRegistrar.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16),
             
@@ -99,5 +102,12 @@ class RegisterView: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    //MARK: - Actions
+    @objc
+    private func loginTap(){
+        onLoginTap?()
+    }
+    
     
 }
