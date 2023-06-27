@@ -16,8 +16,6 @@
 		C5B4CE462A28CB9700D3D65C /* AppNotificaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B4CE452A28CB9700D3D65C /* AppNotificaTests.swift */; };
 		C5B4CE502A28CB9700D3D65C /* AppNotificaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B4CE4F2A28CB9700D3D65C /* AppNotificaUITests.swift */; };
 		C5B4CE522A28CB9700D3D65C /* AppNotificaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B4CE512A28CB9700D3D65C /* AppNotificaUITestsLaunchTests.swift */; };
-		C5B4CE632A28D7AC00D3D65C /* Component 3.png in Resources */ = {isa = PBXBuildFile; fileRef = C5B4CE622A28D7AC00D3D65C /* Component 3.png */; };
-		C5B4CE652A28D88C00D3D65C /* Component 4.png in Resources */ = {isa = PBXBuildFile; fileRef = C5B4CE642A28D88C00D3D65C /* Component 4.png */; };
 		C5B4CE682A2F5F3300D3D65C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B4CE672A2F5F3300D3D65C /* LoginView.swift */; };
 		C5B4CE6A2A2F5F6700D3D65C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B4CE692A2F5F6700D3D65C /* LoginViewController.swift */; };
 		C5B4CE6D2A2F5FB700D3D65C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B4CE6C2A2F5FB700D3D65C /* Coordinator.swift */; };
@@ -56,8 +54,6 @@
 		C5B4CE4B2A28CB9700D3D65C /* AppNotificaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppNotificaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5B4CE4F2A28CB9700D3D65C /* AppNotificaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNotificaUITests.swift; sourceTree = "<group>"; };
 		C5B4CE512A28CB9700D3D65C /* AppNotificaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNotificaUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		C5B4CE622A28D7AC00D3D65C /* Component 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Component 3.png"; path = "../Component 3.png"; sourceTree = "<group>"; };
-		C5B4CE642A28D88C00D3D65C /* Component 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Component 4.png"; path = "../Component 4.png"; sourceTree = "<group>"; };
 		C5B4CE672A2F5F3300D3D65C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		C5B4CE692A2F5F6700D3D65C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C5B4CE6C2A2F5FB700D3D65C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
@@ -95,8 +91,6 @@
 		C5B4CE1F2A28CB9200D3D65C = {
 			isa = PBXGroup;
 			children = (
-				C5B4CE642A28D88C00D3D65C /* Component 4.png */,
-				C5B4CE622A28D7AC00D3D65C /* Component 3.png */,
 				C5B4CE2A2A28CB9300D3D65C /* AppNotifica */,
 				C5B4CE442A28CB9700D3D65C /* AppNotificaTests */,
 				C5B4CE4E2A28CB9700D3D65C /* AppNotificaUITests */,
@@ -280,9 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5B4CE632A28D7AC00D3D65C /* Component 3.png in Resources */,
 				C5B4CE3B2A28CB9600D3D65C /* LaunchScreen.storyboard in Resources */,
-				C5B4CE652A28D88C00D3D65C /* Component 4.png in Resources */,
 				C5B4CE332A28CB9300D3D65C /* Main.storyboard in Resources */,
 				C5B4CE742A2F662C00D3D65C /* Assets.xcassets in Resources */,
 			);
