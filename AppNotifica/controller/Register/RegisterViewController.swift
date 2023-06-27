@@ -8,7 +8,8 @@
 import Foundation
 import UIKit
 
-class RegisterViewController: UIViewController {
+class RegisterViewController: ViewControllerDefault {
+   
     //MARK: -  Clouseres
     var onLoginTap: (() -> Void)?
     
@@ -31,8 +32,6 @@ class RegisterViewController: UIViewController {
        override func viewDidLoad() {
            super.viewDidLoad()
         self.title = "Registrar"
-           
-           self.navigationController?.navigationBar.prefersLargeTitles=true
 
        }
 
