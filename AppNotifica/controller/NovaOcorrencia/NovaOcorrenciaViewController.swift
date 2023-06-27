@@ -1,5 +1,5 @@
 //
-//  HomeViewController.swift
+//  NovaOcorrenciaViewController.swift
 //  AppNotifica
 //
 //  Created by IFBIOTIC08 on 27/06/23.
@@ -8,28 +8,26 @@
 import Foundation
 import UIKit
 
-class HomeViewController: ViewControllerDefault {
+class NovaOcorrenciaViewController: ViewControllerDefault {
     
     //MARK: -  Clouseres
     
     //cria uma variável que é do
     
-    lazy var homeView: HomeView = {
-        let homeView = HomeView()
+    lazy var novaOcorrenciaView: NovaOcorrenciaView = {
+        let novaOcorrenciaView = NovaOcorrenciaView()
         
         
-        return homeView
+        return novaOcorrenciaView
     }()
     
     override func loadView(){
-        self.view = homeView
+        self.view = novaOcorrenciaView
     }
     
     // é executado quando está carregando
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Ocorrências"
+        self.title = "Nova Ocorrência"
     }
-    
 }
-

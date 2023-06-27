@@ -1,13 +1,15 @@
 //
-//  HomeView.swift
+//  NovaOcorrenciaView.swift
 //  AppNotifica
 //
 //  Created by IFBIOTIC08 on 27/06/23.
 //
 
 import Foundation
+
 import UIKit
-class HomeView: ViewDefault {
+
+class NovaOcorrenciaView: ViewDefault {
     //MARK: - Closures
     
     //MARK: - Proports
@@ -21,4 +23,3 @@ class HomeView: ViewDefault {
     }
     
 }
-
