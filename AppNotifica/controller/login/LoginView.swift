@@ -22,11 +22,11 @@ class LoginView: ViewDefault {
     var imageLabel = LabelDefault(text: "Registre e gerencie as ocorrências do seu IF", font: UIFont.systemFont(ofSize: 17, weight: .regular))
     
     //cria a variável com as propriadades da text no login
-    var emailTextField = TextFieldDefault (placeholder: "E-mail", keyBordType: .emailAddress, returnKeyType: .next)
+    var emailTextField = TextFieldDefault (placeholder: "   E-mail", keyBordType: .emailAddress, returnKeyType: .next)
     
     //cria a variável com as propriadades da text no login
     var senhaTextField : TextFieldDefault  = {
-        let text = TextFieldDefault(placeholder: "Senha", keyBordType: .emailAddress, returnKeyType: .done)
+        let text = TextFieldDefault(placeholder: "   Senha", keyBordType: .emailAddress, returnKeyType: .done)
         
         text.isSecureTextEntry = true;
         
