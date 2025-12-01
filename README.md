@@ -1,2 +1,2 @@
 # AppNotifica
- Desenvolvimento do aplicativo Notifica, objeto de estudo do curso de linguagem swift
+ Desenvolvimento do aplicativo Notifica, objeto de estudo do curso de linguagem swift do IFB - no BIOTIC
